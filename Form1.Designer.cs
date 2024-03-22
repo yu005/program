@@ -34,6 +34,11 @@
             button3 = new Button();
             button4 = new Button();
             button5 = new Button();
+            button6 = new Button();
+            button7 = new Button();
+            button8 = new Button();
+            button9 = new Button();
+            button10 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -48,11 +53,13 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(452, 72);
+            label1.Font = new Font("ROG Fonts", 16.1999989F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(470, 72);
             label1.Name = "label1";
-            label1.Size = new Size(51, 19);
+            label1.Size = new Size(156, 32);
             label1.TabIndex = 1;
-            label1.Text = "label1";
+            label1.Text = "Player";
+            label1.Click += label1_Click;
             // 
             // button2
             // 
@@ -86,11 +93,58 @@
             button5.TabIndex = 5;
             button5.UseVisualStyleBackColor = true;
             // 
+            // button6
+            // 
+            button6.Location = new Point(215, 72);
+            button6.Name = "button6";
+            button6.Size = new Size(109, 101);
+            button6.TabIndex = 6;
+            button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            button7.Location = new Point(322, 269);
+            button7.Name = "button7";
+            button7.Size = new Size(109, 101);
+            button7.TabIndex = 7;
+            button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            button8.Location = new Point(322, 171);
+            button8.Name = "button8";
+            button8.Size = new Size(109, 101);
+            button8.TabIndex = 8;
+            button8.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            button9.Location = new Point(322, 72);
+            button9.Name = "button9";
+            button9.Size = new Size(109, 101);
+            button9.TabIndex = 9;
+            button9.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            button10.Font = new Font("ROG Fonts", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button10.Location = new Point(485, 107);
+            button10.Name = "button10";
+            button10.Size = new Size(123, 113);
+            button10.TabIndex = 10;
+            button10.Text = "x";
+            button10.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(9F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button10);
+            Controls.Add(button9);
+            Controls.Add(button8);
+            Controls.Add(button7);
+            Controls.Add(button6);
             Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button3);
@@ -112,5 +166,10 @@
         private Button button3;
         private Button button4;
         private Button button5;
+        private Button button6;
+        private Button button7;
+        private Button button8;
+        private Button button9;
+        private Button button10;
     }
 }
